@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - The Velvet Fork</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <header>
+        <h1>The Velvet Fork</h1>
+        <p>Experience luxury dining with a touch of elegance</p>
+    </header>
+    <nav style="display:flex; justify-content:space-between; align-items:center; padding:0 2rem;">
+        <div class="nav-links" style="display:flex; gap:1.2rem; align-items:center;">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="reservation.html">Reservation</a>
+            <a href="about.html">About</a>
+            <a href="reviews.html">Reviews</a>
+        </div>
+        <div class="nav-auth" style="display:flex; align-items:center; gap:1rem;">
+            <a href="login.html" id="profile-link" style="display:none; color:#6a1b9a; font-weight:600; text-decoration:none; border-radius:18px; padding:0.5rem 1.2rem; background:#ede2ff; border:1px solid #a18cd1; transition:background 0.2s, color 0.2s;">My Profile</a>
+            <button id="login-btn" class="login-btn" style="background:#fff; color:#6a1b9a; border-radius:20px; border:1px solid #a18cd1; padding:0.5rem 1.3rem; font-weight:600; cursor:pointer; transition:background 0.2s, color 0.2s;">Login</button>
+        </div>
+    </nav>
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div style="text-align:center; margin-bottom:1.5rem; display:flex; flex-direction:column; align-items:center; gap:0.7rem;">
+            <input id="dish-search" type="text" placeholder="Search for a dish..." style="padding:0.7rem 1.2rem; border-radius:20px; border:1px solid #ccc; width:80%; max-width:350px; font-size:1rem;">
+            <select id="cuisine-filter" style="padding:0.6rem 1.2rem; border-radius:20px; border:1px solid #ccc; width:80%; max-width:220px; font-size:1rem;">
+                <option value="all">All Cuisines</option>
+                <option value="north-indian">North Indian</option>
+                <option value="south-indian">South Indian</option>
+                <option value="chinese">Chinese</option>
+                <option value="italian">Italian</option>
+                <option value="continental">Continental</option>
+                <option value="beverages">Beverages & Alcohol</option>
+            </select>
+        </div>
+        <div class="menu-section">
+            <h3>North Indian</h3>
+            <h4>Veg</h4>
+            <div class="menu-item" data-dish="shahi-paneer"><img src="pics/shahi-paneer.jpg" alt="Shahi Paneer" class="dish-thumb"><span><b>Shahi Paneer</b></span><span>₹210 <span class="rating">★★★★☆</span><button class="favorite-btn" title="Add to favorites">&#9825;</button></span></div>
+            <div class="menu-item" data-dish="mix-veg"><img src="pics/mixed-veg.jpg" alt="Mix Veg" class="dish-thumb"><span>Mix Veg</span><span>₹170 <span class="rating">★★★☆☆</span><button class="favorite-btn" title="Add to favorites">&#9825;</button></span></div>
+            <div class="menu-item" data-dish="aloo-dum"><img src="pics/dum-aloo.jpg" alt="Aloo Dum" class="dish-thumb"><span>Aloo Dum</span><span>₹260 <span class="rating">★★★★☆</span><button class="favorite-btn" title="Add to favorites">&#9825;</button></span></div>
+            <div class="menu-item" data-dish="palak-paneer"><img src="pics/palak-paneer.jpg" alt="Palak Paneer" class="dish-thumb"><span>Palak Paneer</span><span>₹250 <span class="rating">★★★★☆</span><button class="favorite-btn" title="Add to favorites">&#9825;</button></span></div>
+            <div class="menu-item" data-dish="kadhai-paneer"><img src="pics/kadai-paneer.jpg" alt="Kadhai Paneer" class="dish-thumb"><span>Kadhai Paneer</span><span>₹190 <span class="rating">★★★★☆</span><button class="favorite-btn" title="Add to favorites">&#9825;</button></span></div>
+            <h4>Non-Veg</h4>
+            <div class="menu-item" data-dish="chicken-curry"><img src="pics/Chicken-Curry.jpg" alt="Chicken Curry" class="dish-thumb"><span>Chicken Curry</span><span>₹250 <span class="rating">★★★★☆</span><button class="favorite-btn" title="Add to favorites">&#9825;</button></span></div>
+            <div class="menu-item" data-dish="mutton-korma"><img src="pics/bihari-mutton-curry.jpg" alt="Mutton Korma" class="dish-thumb"><span>Mutton Korma</span><span>₹450 <span class="rating">★★★★★</span><button class="favorite-btn" title="Add to favorites">&#9825;</button></span></div>
+            <div class="menu-item" data-dish="fish-curry"><img src="pics/fish-curry.jpg" alt="Fish Curry" class="dish-thumb"><span>Fish Curry</span><span>₹320 <span class="rating">★★★★☆</span><button class="favorite-btn" title="Add to favorites">&#9825;</button></span></div>
+            <div class="menu-item" data-dish="chicken-butter-masala"><img src="pics/butter chicken.jpg" alt="Chicken Butter Masala" class="dish-thumb"><span>Chicken Butter Masala</span><span>₹350 <span class="rating">★★★★☆</span><button class="favorite-btn" title="Add to favorites">&#9825;</button></span></div>
+            <div class="menu-item" data-dish="mutton-curry"><img src="pics/bihari-mutton-curry.jpg" alt="Mutton Curry" class="dish-thumb"><span>Mutton Curry</span><span>₹410<span class="rating">★★★★☆</span><button class="favorite-btn" title="Add to favorites">&#9825;</button></span></div>
+        </div>
+        <div class="menu-section">
+            <h3>South Indian</h3>
+            <div class="menu-item" data-dish="uttapam"><img src="pics/uttapam.jpg" alt="Uttapam" class="dish-thumb"><span>Uttapam</span><span>₹170 <span class="rating">★★★★☆</span><button class="favorite-btn" title="Add to favorites">&#9825;</button></span></div>
+            <div class="menu-item" data-dish="vada-sambar"><img src="pics/Vada sambar.jpg" alt="Vada Sambar" class="dish-thumb"><span>Vada Sambar</span><span>₹160 <span class="rating">★★★☆☆</span><button class="favorite-btn" title="Add to favorites">&#9825;</button></span></div>
+            <div class="menu-item" data-dish="thaate-idli"><img src="pics/thatte idly.jpg" alt="Thaate Idli" class="dish-thumb"><span>Thaate Idli</span><span>₹180<span class="rating">★★★★☆</span><button class="favorite-btn" title="Add to favorites">&#9825;</button></span></div>
+            <div class="menu-item" data-dish="masala-dosa"><img src="pics/masala dosa.jpg" alt="Masala Dosa" class="dish-thumb"><span>Masala Dosa</span><span>₹210 <span class="rating">★★★★☆</span><button class="favorite-btn" title="Add to favorites">&#9825;</button></span></div>
+            <div class="menu-item" data-dish="idli-coconut-chutney"><img src="pics/idli coconut chutny.jpg" alt="Idli Coconut Chutney" class="dish-thumb"><span>Idli Coconut Chutney</span><span>₹120<span class="rating">★★★★☆</span><button class="favorite-btn" title="Add to favorites">&#9825;</button></span></div>
+        </div>
+        <div class="menu-section">
+            <h3>Chinese</h3>
+            <div class="menu-item" data-dish="hakka-noodles"><img src="pics/Hakka-Noodles-.jpg" alt="Hakka Noodles" class="dish-thumb"><span>Hakka Noodles</span><span>₹180 <span class="rating">★★★★☆</span><button class="favorite-btn" title="Add to favorites">&#9825;</button></span></div>
+            <div class="menu-item" data-dish="schezwan-fried-rice"><img src="pics/schezwan  fried rice.jpg" alt="Schezwan Fried Rice" class="dish-thumb"><span>Schezwan Fried Rice</span><span>₹200 <span class="rating">★★★★☆</span><button class="favorite-btn" title="Add to favorites">&#9825;</button></span></div>
+            <div class="menu-item" data-dish="manchurian-fried-rice"><img src="pics/manchurian-fried-rice.jpg" alt="Manchurian with Fried Rice" class="dish-thumb"><span>Manchurian with Fried Rice</span><span>₹230<span class="rating">★★★★☆</span><button class="favorite-btn" title="Add to favorites">&#9825;</button></span></div>
+            <div class="menu-item" data-dish="manchurian-noodles"><img src="pics/manchurian-noodle.jpg" alt="Manchurian with Noodles" class="dish-thumb"><span>Manchurian with Noodles</span><span>₹240<span class="rating">★★★★☆</span><button class="favorite-btn" title="Add to favorites">&#9825;</button></span></div>
+            <div class="menu-item" data-dish="paneer-chilly-noodles"><img src="pics/paneer noddle.jpg" alt="Paneer Chilly With Noodles" class="dish-thumb"><span>Paneer Chilly With Noodles </span><span>₹270<span class="rating">★★★★☆</span><button class="favorite-btn" title="Add to favorites">&#9825;</button></span></div>
+        </div>
+        <div class="menu-section">
+            <h3>Italian</h3>
+            <div class="menu-item" data-dish="garlic-bread"><img src="pics/garlic-bread.jpg" alt="Garlic Bread" class="dish-thumb"><span>Garlic Bread</span><span>₹120 <span class="rating">★★★☆☆</span><button class="favorite-btn" title="Add to favorites">&#9825;</button></span></div>
+            <div class="menu-item" data-dish="four-cheese-pizza"><img src="pics/classic-cheese-pizza.jpg" alt="Four Cheese Pizza" class="dish-thumb"><span>Four Cheese Pizza</span><span>₹250 <span class="rating">★★★★★</span><button class="favorite-btn" title="Add to favorites">&#9825;</button></span></div>
+            <div class="menu-item" data-dish="alfredo-pasta"><img src="pics/alfredo_pasta.jpg" alt="Alfredo Pasta" class="dish-thumb"><span>Alfredo Pasta</span><span>₹210 <span class="rating">★★★☆☆</span><button class="favorite-btn" title="Add to favorites">&#9825;</button></span></div>
+            <div class="menu-item" data-dish="speghetti"><img src="pics/spaghetti.jpg" alt="Speghetti" class="dish-thumb"><span>Speghetti</span><span>₹280<span class="rating">★★★☆☆</span><button class="favorite-btn" title="Add to favorites">&#9825;</button></span></div>
+            <div class="menu-item" data-dish="risotta"><img src="pics/risotto.jpg" alt="Risotto" class="dish-thumb"><span>Risotto</span><span>₹350 <span class="rating">★★★☆☆</span><button class="favorite-btn" title="Add to favorites">&#9825;</button></span></div>
+        </div>
+        <div class="menu-section">
+            <h3>Continental</h3>
+            <div class="menu-item" data-dish="caesar-salad"><img src="pics/ceasar salad.jpg" alt="Caesar Salad" class="dish-thumb"><span>Caesar Salad</span><span>₹220 <span class="rating">★★★☆☆</span><button class="favorite-btn" title="Add to favorites">&#9825;</button></span></div>
+        </div>
+        <div class="menu-section">
+            <h3>Beverages & Alcohol</h3>
+            <div class="menu-item" data-dish="mango-smoothie"><img src="pics/Mango-Smoothie.jpg" alt="Mango Smoothie" class="dish-thumb"><span>Mango Smoothie</span><span>₹120 <span class="rating">★★★★☆</span><button class="favorite-btn" title="Add to favorites">&#9825;</button></span></div>
+            <div class="menu-item" data-dish="cold-coffee"><img src="pics/cold coffee.jpg" alt="Cold Coffee" class="dish-thumb"><span>Cold Coffee</span><span>₹100 <span class="rating">★★★☆☆</span><button class="favorite-btn" title="Add to favorites">&#9825;</button></span></div>
+            <div class="menu-item" data-dish="beer"><img src="pics/beer.jpg" alt="Beer (Pint)" class="dish-thumb"><span>Beer (Pint)</span><span>₹160 <span class="rating">★★★★☆</span><button class="favorite-btn" title="Add to favorites">&#9825;</button></span></div>
+            <div class="menu-item" data-dish="red-wine"><img src="pics/red wine.jpg" alt="Red Wine (Glass)" class="dish-thumb"><span>Red Wine (Glass)</span><span>₹300 <span class="rating">★★★★★</span><button class="favorite-btn" title="Add to favorites">&#9825;</button></span></div>
+            <div class="menu-item" data-dish="lassi"><img src="pics/lassi.jpg" alt="Lassi" class="dish-thumb"><span>Lassi</span><span>₹80 <span class="rating">★★★★☆</span><button class="favorite-btn" title="Add to favorites">&#9825;</button></span></div>
+        </div>
+    </section>
+    <!-- Modal for dish details -->
+    <div id="dish-modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.5); z-index:1000; align-items:center; justify-content:center;">
+        <div style="background:#fff; border-radius:12px; max-width:90vw; width:350px; padding:2rem 1.2rem; position:relative; box-shadow:0 8px 32px rgba(106,27,154,0.18); text-align:center;">
+            <button id="close-modal" style="position:absolute; top:10px; right:15px; background:none; border:none; font-size:1.5rem; color:#6a1b9a; cursor:pointer;">&times;</button>
+            <img id="dish-img" src="" alt="Dish Image" style="width:80%; border-radius:10px; margin-bottom:1rem; display:none;">
+            <h3 id="dish-title"></h3>
+            <p id="dish-ingredients" style="margin:1rem 0; color:#6a1b9a;"></p>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Quick Links -->
+            <div class="footlinks">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                </ul>
+            </div>
+            <!-- Contact Info -->
+            <div class="footlinks">
+                <h4>Contact</h4>
+                <p class="contact-info">
+                    <i class="bx bx-phone"></i> +91 8709547016<br>
+                    <i class="bx bx-envelope"></i> velvetfork@gmail.com<br>
+                    <i class="bx bx-map"></i> Alpha 2, Greater Noida
+                </p>
+            </div>
+            <!-- Newsletter -->
+            <div class="footlinks">
+                <h4>Subscribe Newsletter</h4>
+                <p class="subscribe-text">Stay updated with our latest offers!</p>
+                <form class="subscribe-form" id="subscribeForm">
+                    <input type="email" id="subscribeEmail" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+                <p id="subscribeMsg" style="color:green;display:none;margin-top:10px;"></p>
+            </div>
+            <!-- Socials -->
+            <div class="footlinks">
+                <h4>Connect With Us</h4>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook"><img src="pics/fb.png" alt="Facebook" style="width:28px;"></a>
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram"><img src="pics/insta.jpg" alt="Instagram" style="width:28px;"></a>
+                    <a href="https://x.com" target="_blank" aria-label="X (Twitter)"><img src="pics/twiter.png" alt="X (Twitter)" style="width:28px;"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-line" style="height:1px; background:#e0e0e0; margin:18px 0;"></div>
+            <div class="footer-credits">
+                <p>&copy; 2025 The Velvet Fork. All Rights Reserved.</p>
+                <p>Designed with <span style='color:#e53935'>&#10084;</span> by The Velvet Fork Team</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

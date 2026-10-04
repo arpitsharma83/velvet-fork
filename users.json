@@ -1,0 +1,26 @@
+[
+  {
+    "username": "arpit12",
+    "email": "arpit1@gamil.com",
+    "password": "scrypt:32768:8:1$mNY0xNfiqTKxcec0$1610dea93a7398a0564529cec12dce6e1688eefca721506ed1ce26775457b7b9eee893d12f01009412ad91011d1d7a34c632e86908acc284f4f2090c6056f9bc",
+    "favorites": [
+      "chicken-curry",
+      "vada-sambar",
+      "chicken-butter-masala",
+      "fish-curry",
+      "aloo-dum",
+      "shahi-paneer",
+      "mutton-korma",
+      "mix-veg"
+    ]
+  },
+  {
+    "username": "July10",
+    "email": "july10@gmail.com",
+    "password": "scrypt:32768:8:1$qiqldvChbzDN7til$3140a4bf3728f0fbd7d3bc9b963e4b0342e3782e43ed209d9abe7318d0072d17b52505435247dd634ee4467ced6d0b37729854d6d30ed474a383ba6e1f6b959a",
+    "favorites": [
+      "palak-paneer",
+      "shahi-paneer"
+    ]
+  }
+]

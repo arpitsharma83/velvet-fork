@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation - The Velvet Fork</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>The Velvet Fork</h1>
+        <p>Experience luxury dining with a touch of elegance</p>
+    </header>
+    <nav style="display:flex; justify-content:space-between; align-items:center; padding:0 2rem;">
+        <div class="nav-links" style="display:flex; gap:1.2rem; align-items:center;">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="reservation.html">Reservation</a>
+            <a href="about.html">About</a>
+            <a href="reviews.html">Reviews</a>
+        </div>
+        <div class="nav-auth" style="display:flex; align-items:center; gap:1rem;">
+            <a href="login.html" id="profile-link" style="display:none; color:#6a1b9a; font-weight:600; text-decoration:none; border-radius:18px; padding:0.5rem 1.2rem; background:#ede2ff; border:1px solid #a18cd1; transition:background 0.2s, color 0.2s;">My Profile</a>
+            <button id="login-btn" class="login-btn" style="background:#fff; color:#6a1b9a; border-radius:20px; border:1px solid #a18cd1; padding:0.5rem 1.3rem; font-weight:600; cursor:pointer; transition:background 0.2s, color 0.2s;">Login</button>
+        </div>
+    </nav>
+    <section id="reservation" class="reservation-section">
+        <div class="reservation-card">
+            <div class="reservation-header">
+                <h2>Book a Table</h2>
+                <p>Reserve your spot for a memorable dining experience!</p>
+            </div>
+            <form id="reservation-form" class="reservation-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="tel" name="phone" placeholder="Phone Number" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <div class="form-row">
+                    <input type="date" name="date" required>
+                    <input type="time" name="time" required>
+                </div>
+                <select name="people" required>
+                    <option value="">Number of People</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4+">4+</option>
+                </select>
+                <textarea name="requests" placeholder="Special Requests"></textarea>
+                <button type="submit">Book Now</button>
+                <div class="form-confirmation" style="display:none;"></div>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Quick Links -->
+            <div class="footlinks">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                </ul>
+            </div>
+            <!-- Contact Info -->
+            <div class="footlinks">
+                <h4>Contact</h4>
+                <p class="contact-info">
+                    <i class="bx bx-phone"></i> +91 8709547016<br>
+                    <i class="bx bx-envelope"></i> velvetfork@gmail.com<br>
+                    <i class="bx bx-map"></i> Alpha 2, Greater Noida
+                </p>
+            </div>
+            <!-- Newsletter -->
+            <div class="footlinks">
+                <h4>Subscribe Newsletter</h4>
+                <p class="subscribe-text">Stay updated with our latest offers!</p>
+                <form class="subscribe-form" id="subscribeForm">
+                    <input type="email" id="subscribeEmail" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+                <p id="subscribeMsg" style="color:green;display:none;margin-top:10px;"></p>
+            </div>
+            <!-- Socials -->
+            <div class="footlinks">
+                <h4>Connect With Us</h4>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook"><img src="pics/fb.png" alt="Facebook" style="width:28px;"></a>
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram"><img src="pics/insta.jpg" alt="Instagram" style="width:28px;"></a>
+                    <a href="https://x.com" target="_blank" aria-label="X (Twitter)"><img src="pics/twiter.png" alt="X (Twitter)" style="width:28px;"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-line" style="height:1px; background:#e0e0e0; margin:18px 0;"></div>
+            <div class="footer-credits">
+                <p>&copy; 2025 The Velvet Fork. All Rights Reserved.</p>
+                <p>Designed with <span style='color:#e53935'>&#10084;</span> by The Velvet Fork Team</p>
+            </div>
+        </div>
+    </footer>
+    <script defer src="main.js"></script>
+</body>
+</html>

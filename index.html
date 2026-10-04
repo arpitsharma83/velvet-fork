@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Velvet Fork</title>
+    <meta name="description" content="Experience luxury dining with a touch of elegance at The Velvet Fork. Discover a world of flavors in the heart of Delhi.">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <header>
+        <h1 id="headline">The Velvet Fork</h1>
+        <p>Experience luxury dining with a touch of elegance</p>
+    </header>
+    <nav style="display:flex; justify-content:space-between; align-items:center; padding:0 2rem;">
+        <div class="nav-links" style="display:flex; gap:1.2rem; align-items:center;">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="reservation.html">Reservation</a>
+            <a href="about.html">About</a>
+            <a href="reviews.html">Reviews</a>
+        </div>
+        <div class="nav-auth" style="display:flex; align-items:center; gap:1rem;">
+            <a href="login.html" id="profile-link" style="display:none; color:#6a1b9a; font-weight:600; text-decoration:none; border-radius:18px; padding:0.5rem 1.2rem; background:#ede2ff; border:1px solid #a18cd1; transition:background 0.2s, color 0.2s;">My Profile</a>
+            <button id="login-btn" class="login-btn" style="background:#fff; color:#6a1b9a; border-radius:20px; border:1px solid #a18cd1; padding:0.5rem 1.3rem; font-weight:600; cursor:pointer; transition:background 0.2s, color 0.2s;">Login</button>
+        </div>
+    </nav>
+    <section class="hero" style="padding:2.5rem 1rem 1.5rem 1rem; background:#ede2ff; border-radius:18px; margin:2rem auto 0 auto; max-width:1100px; box-shadow:0 4px 16px rgba(106,27,154,0.08);">
+        <h1 style="color:#6a1b9a; font-size:2.5rem; font-weight:700; margin-bottom:1.2rem;">Welcome to The Velvet Fork</h1>
+        <p style="font-size:1.2rem; color:#555; margin-bottom:2rem;">Experience luxury dining in the heart of Delhi. Explore our elegant interiors and world-class cuisine.</p>
+        <div class="hero-gallery" style="display:flex; gap:1.2rem; justify-content:center; flex-wrap:wrap;">
+            <img src="pics/int1.avif" alt="Restaurant Interior 1" style="width:31%; min-width:220px; max-width:340px; border-radius:16px; box-shadow:0 2px 12px rgba(106,27,154,0.10); object-fit:cover; aspect-ratio:4/3;" loading="lazy">
+            <img src="pics/int2.avif" alt="Restaurant Interior 2" style="width:31%; min-width:220px; max-width:340px; border-radius:16px; box-shadow:0 2px 12px rgba(106,27,154,0.10); object-fit:cover; aspect-ratio:4/3;" loading="lazy">
+            <img src="pics/int3.avif" alt="Restaurant Interior 3" style="width:31%; min-width:220px; max-width:340px; border-radius:16px; box-shadow:0 2px 12px rgba(106,27,154,0.10); object-fit:cover; aspect-ratio:4/3;" loading="lazy">
+        </div>
+    </section>
+    <div style="text-align:center; margin-top:1.2rem;">
+        <a href="reservation.html" class="book-table-btn">Book a Table</a>
+    </div>
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p style="text-align:center">📍 Alpha 2 Greater Noida</p>
+        <p style="text-align:center">📞 +91 8709547016</p>
+        <p style="text-align:center">🕒 Mon-Sun: 11am - 11pm</p>
+        <div style="text-align:center">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7014.268656553588!2d77.51609709999997!3d28.47550100000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1748248159780!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <section id="testimonials" class="testimonials-section" aria-label="Customer Testimonials" style="background:#ede2ff; border-radius:14px; margin:2rem auto 0 auto; max-width:700px; padding:2rem 1.2rem; box-shadow:0 2px 12px rgba(106,27,154,0.07);">
+        <h2 style="color:#6a1b9a;">What Our Guests Say</h2>
+        <blockquote style="font-size:1.1rem; color:#555; margin:1.2rem 0; border-left:4px solid #a18cd1; padding-left:1rem;">“Amazing food and lovely ambiance!”<br><span style="font-size:0.95em; color:#888;">- Priya R.</span></blockquote>
+        <blockquote style="font-size:1.1rem; color:#555; margin:1.2rem 0; border-left:4px solid #a18cd1; padding-left:1rem;">“Best biryani in town. Highly recommended.”<br><span style="font-size:0.95em; color:#888;">- Arjun S.</span></blockquote>
+        <blockquote style="font-size:1.1rem; color:#555; margin:1.2rem 0; border-left:4px solid #a18cd1; padding-left:1rem;">“Loved the desserts and the staff were very welcoming!”<br><span style="font-size:0.95em; color:#888;">- Neha K.</span></blockquote>
+        <p style="text-align:center; font-weight: bold; color:#6a1b9a;">Restaurant Rating: ★★★★☆</p>
+        <div style="text-align:center; margin-top:1.2rem;"><a href="reviews.html" style="color:#fff; background:linear-gradient(90deg,#a18cd1,#fbc2eb); padding:0.7rem 2rem; border-radius:30px; text-decoration:none; font-weight:500;">Read More Reviews</a></div>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Quick Links -->
+            <div class="footlinks">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                </ul>
+            </div>
+            <!-- Contact Info -->
+            <div class="footlinks">
+                <h4>Contact</h4>
+                <p class="contact-info">
+                    <i class="bx bx-phone"></i> +91 8709547016<br>
+                    <i class="bx bx-envelope"></i> velvetfork@gmail.com<br>
+                    <i class="bx bx-map"></i> Alpha 2, Greater Noida
+                </p>
+            </div>
+            <!-- Newsletter -->
+            <div class="footlinks">
+                <h4>Subscribe Newsletter</h4>
+                <p class="subscribe-text">Stay updated with our latest offers!</p>
+                <form class="subscribe-form" id="subscribeForm">
+                    <input type="email" id="subscribeEmail" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+                <p id="subscribeMsg" style="color:green;display:none;margin-top:10px;"></p>
+            </div>
+            <!-- Socials -->
+            <div class="footlinks">
+                <h4>Connect With Us</h4>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook"><img src="pics/fb.png" alt="Facebook" style="width:28px;"></a>
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram"><img src="pics/insta.jpg" alt="Instagram" style="width:28px;"></a>
+                    <a href="https://x.com" target="_blank" aria-label="X (Twitter)"><img src="pics/twiter.png" alt="X (Twitter)" style="width:28px;"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-line" style="height:1px; background:#e0e0e0; margin:18px 0;"></div>
+            <div class="footer-credits">
+                <p>&copy; 2025 The Velvet Fork. All Rights Reserved.</p>
+                <p>Designed with <span style='color:#e53935'>&#10084;</span> by The Velvet Fork Team</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Logout Confirmation Modal -->
+    <div id="logout-modal" class="logout-modal" style="display:none;">
+        <div class="logout-modal-content">
+            <p style="font-size:1.1rem; color:#6a1b9a; font-weight:500; margin-bottom:1.2rem;">Are you sure you want to logout?</p>
+            <div style="display:flex; gap:1.2rem; justify-content:center;">
+                <button id="logout-confirm-btn" style="background:#a18cd1; color:#fff; border:none; border-radius:18px; padding:0.6rem 1.5rem; font-weight:600; cursor:pointer;">Yes, Logout</button>
+                <button id="logout-cancel-btn" style="background:#ede2ff; color:#6a1b9a; border:1px solid #a18cd1; border-radius:18px; padding:0.6rem 1.5rem; font-weight:600; cursor:pointer;">Cancel</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

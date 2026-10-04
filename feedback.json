@@ -1,0 +1,30 @@
+[
+  {
+    "username": "lucky",
+    "text": "i love the foods",
+    "date": "2025-06-10"
+  },
+  {
+    "username": "arpit12",
+    "text": "loved the food to much",
+    "date": "2025-06-10"
+  },
+  {
+    "username": "arpit12",
+    "text": "like the staff and food",
+    "rating": 4,
+    "date": "2025-06-10"
+  },
+  {
+    "username": "July10",
+    "text": "the food here is so tasty",
+    "rating": 4,
+    "date": "2025-06-11"
+  },
+  {
+    "username": "July10",
+    "text": "loved it",
+    "rating": 5,
+    "date": "2025-06-11"
+  }
+]

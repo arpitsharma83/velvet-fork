@@ -1,0 +1,205 @@
+[
+  {
+    "id": "shahi-paneer",
+    "title": "Shahi Paneer",
+    "ingredients": "Paneer, cream, tomato, cashew, spices, butter",
+    "img": "pics/shahi-paneer.jpg",
+    "category": "north-indian"
+  },
+  {
+    "id": "mix-veg",
+    "title": "Mix Veg",
+    "ingredients": "Mixed vegetables, spices, tomato, onion, cream",
+    "img": "pics/mixed-veg.jpg",
+    "category": "north-indian"
+  },
+  {
+    "id": "aloo-dum",
+    "title": "Aloo Dum",
+    "ingredients": "Potatoes, tomato, onion, yogurt, spices",
+    "img": "pics/dum-aloo.jpg",
+    "category": "north-indian"
+  },
+  {
+    "id": "palak-paneer",
+    "title": "Palak Paneer",
+    "ingredients": "Paneer, spinach, spices, cream",
+    "img": "pics/palak-paneer.jpg",
+    "category": "north-indian"
+  },
+  {
+    "id": "kadai-paneer",
+    "title": "Kadai Paneer",
+    "ingredients": "Paneer, capsicum, onion, tomato, spices",
+    "img": "pics/kadai-paneer.jpg",
+    "category": "north-indian"
+  },
+  {
+    "id": "butter-chicken",
+    "title": "Butter Chicken",
+    "ingredients": "Chicken, tomato, butter, cream, spices",
+    "img": "pics/butter chicken.jpg",
+    "category": "north-indian"
+  },
+  {
+    "id": "chicken-curry",
+    "title": "Chicken Curry",
+    "ingredients": "Chicken, onion, tomato, spices",
+    "img": "pics/Chicken-Curry.jpg",
+    "category": "north-indian"
+  },
+  {
+    "id": "mutton-korma",
+    "title": "Mutton Korma",
+    "ingredients": "Mutton, yogurt, spices, onion, tomato",
+    "img": "pics/bihari-mutton-curry.jpg",
+    "category": "north-indian"
+  },
+  {
+    "id": "fish-curry",
+    "title": "Fish Curry",
+    "ingredients": "Fish, tomato, onion, spices",
+    "img": "pics/fish-curry.jpg",
+    "category": "north-indian"
+  },
+  {
+    "id": "vada-sambar",
+    "title": "Vada Sambar",
+    "ingredients": "Lentil doughnuts, sambar, coconut chutney",
+    "img": "pics/Vada sambar.jpg",
+    "category": "south-indian"
+  },
+  {
+    "id": "idli-coconut-chutny",
+    "title": "Idli Coconut Chutney",
+    "ingredients": "Steamed rice cakes, coconut chutney",
+    "img": "pics/idli coconut chutny.jpg",
+    "category": "south-indian"
+  },
+  {
+    "id": "masala-dosa",
+    "title": "Masala Dosa",
+    "ingredients": "Rice crepe, potato filling, chutney",
+    "img": "pics/masala dosa.jpg",
+    "category": "south-indian"
+  },
+  {
+    "id": "uttapam",
+    "title": "Uttapam",
+    "ingredients": "Rice pancake, vegetables, chutney",
+    "img": "pics/uttapam.jpg",
+    "category": "south-indian"
+  },
+  {
+    "id": "thatte-idly",
+    "title": "Thatte Idly",
+    "ingredients": "Large steamed rice cake, chutney, sambar",
+    "img": "pics/thatte idly.jpg",
+    "category": "south-indian"
+  },
+  {
+    "id": "alfredo-pasta",
+    "title": "Alfredo Pasta",
+    "ingredients": "Pasta, cream, cheese, garlic, herbs",
+    "img": "pics/alfredo_pasta.jpg",
+    "category": "italian"
+  },
+  {
+    "id": "spaghetti",
+    "title": "Spaghetti",
+    "ingredients": "Spaghetti pasta, tomato sauce, herbs",
+    "img": "pics/spaghetti.jpg",
+    "category": "italian"
+  },
+  {
+    "id": "risotto",
+    "title": "Risotto",
+    "ingredients": "Rice, broth, cheese, vegetables",
+    "img": "pics/risotto.jpg",
+    "category": "italian"
+  },
+  {
+    "id": "classic-cheese-pizza",
+    "title": "Classic Cheese Pizza",
+    "ingredients": "Pizza base, cheese, tomato sauce",
+    "img": "pics/classic-cheese-pizza.jpg",
+    "category": "italian"
+  },
+  {
+    "id": "garlic-bread",
+    "title": "Garlic Bread",
+    "ingredients": "Bread, garlic, butter, herbs",
+    "img": "pics/garlic-bread.jpg",
+    "category": "italian"
+  },
+  {
+    "id": "manchurian-fried-rice",
+    "title": "Manchurian Fried Rice",
+    "ingredients": "Rice, vegetables, manchurian sauce",
+    "img": "pics/manchurian-fried-rice.jpg",
+    "category": "chinese"
+  },
+  {
+    "id": "manchurian-noodle",
+    "title": "Manchurian Noodle",
+    "ingredients": "Noodles, vegetables, manchurian sauce",
+    "img": "pics/manchurian-noodle.jpg",
+    "category": "chinese"
+  },
+  {
+    "id": "hakka-noodles",
+    "title": "Hakka Noodles",
+    "ingredients": "Noodles, vegetables, soy sauce",
+    "img": "pics/Hakka-Noodles-.jpg",
+    "category": "chinese"
+  },
+  {
+    "id": "schezwan-fried-rice",
+    "title": "Schezwan Fried Rice",
+    "ingredients": "Rice, vegetables, schezwan sauce",
+    "img": "pics/schezwan  fried rice.jpg",
+    "category": "chinese"
+  },
+  {
+    "id": "paneer-noodle",
+    "title": "Paneer Noodle",
+    "ingredients": "Noodles, paneer, vegetables, spices",
+    "img": "pics/paneer noddle.jpg",
+    "category": "chinese"
+  },
+  {
+    "id": "mango-smoothie",
+    "title": "Mango Smoothie",
+    "ingredients": "Mango, yogurt, sugar, ice",
+    "img": "pics/Mango-Smoothie.jpg",
+    "category": "beverages"
+  },
+  {
+    "id": "lassi",
+    "title": "Lassi",
+    "ingredients": "Yogurt, sugar, cardamom, ice",
+    "img": "pics/lassi.jpg",
+    "category": "beverages"
+  },
+  {
+    "id": "cold-coffee",
+    "title": "Cold Coffee",
+    "ingredients": "Coffee, milk, sugar, ice",
+    "img": "pics/cold coffee.jpg",
+    "category": "beverages"
+  },
+  {
+    "id": "red-wine",
+    "title": "Red Wine",
+    "ingredients": "Red grapes, yeast",
+    "img": "pics/red wine.jpg",
+    "category": "beverages"
+  },
+  {
+    "id": "beer",
+    "title": "Beer",
+    "ingredients": "Barley, hops, yeast, water",
+    "img": "pics/beer.jpg",
+    "category": "beverages"
+  }
+]

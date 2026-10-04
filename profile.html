@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - The Velvet Fork</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <header>
+        <h1>The Velvet Fork</h1>
+        <p>Experience luxury dining with a touch of elegance</p>
+    </header>
+    <nav style="display:flex; justify-content:space-between; align-items:center; padding:0 2rem;">
+        <div class="nav-links" style="display:flex; gap:1.2rem; align-items:center;">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="reservation.html">Reservation</a>
+            <a href="about.html">About</a>
+            <a href="reviews.html">Reviews</a>
+        </div>
+        <div class="nav-auth" style="display:flex; align-items:center; gap:1rem;">
+            <a href="login.html" id="profile-link" style="display:none; color:#6a1b9a; font-weight:600; text-decoration:none; border-radius:18px; padding:0.5rem 1.2rem; background:#ede2ff; border:1px solid #a18cd1; transition:background 0.2s, color 0.2s;">My Profile</a>
+            <button id="login-btn" class="login-btn" style="background:#fff; color:#6a1b9a; border-radius:20px; border:1px solid #a18cd1; padding:0.5rem 1.3rem; font-weight:600; cursor:pointer; transition:background 0.2s, color 0.2s;">Login</button>
+        </div>
+    </nav>
+    <!-- Profile Tabs UI -->
+    <section class="profile-section" style="max-width:900px; margin:2.5rem auto; background:#ede2ff; border-radius:18px; box-shadow:0 4px 24px rgba(106,27,154,0.10); padding:2.5rem 1.5rem;">
+        <div style="display:flex; align-items:center; gap:2.5rem; flex-wrap:wrap; justify-content:center; margin-bottom:2.5rem;">
+            <div class="profile-avatar" style="width:120px; height:120px; border-radius:50%; background:#fff; box-shadow:0 2px 12px rgba(106,27,154,0.09); display:flex; align-items:center; justify-content:center; overflow:hidden; position:relative;">
+                <img id="profile-pic" src="pics\profile.jpg" alt="Profile Picture" style="width:100%; height:100%; object-fit:cover; border-radius:50%;">
+                <input type="file" id="profile-pic-upload" accept="image/*" style="display:none;">
+                <button id="profile-pic-upload-btn" class="profile-pic-upload-btn" style="position:absolute; bottom:8px; left:50%; transform:translateX(-50%); background:#a18cd1; color:#fff; border:none; border-radius:14px; padding:0.3rem 1rem; font-size:0.95rem; cursor:pointer;">Change</button>
+            </div>
+            <div id="profile-info" style="text-align:left; min-width:220px;">
+                <h2 id="profile-username" style="margin:0 0 0.5rem 0; color:#6a1b9a; font-size:1.5rem;"></h2>
+                <p id="profile-email" style="margin:0 0 0.7rem 0; color:#555;"></p>
+                <div style="margin-top:0.7rem;">
+                    <span style="background:#fff; color:#a18cd1; border-radius:12px; padding:0.4rem 1.1rem; font-weight:600; font-size:1.1rem; box-shadow:0 1px 6px rgba(106,27,154,0.08);">Loyalty Points: <span id="loyalty-points">0</span></span>
+                </div>
+            </div>
+        </div>
+        <div class="profile-tabs" style="display:flex; justify-content:center; gap:1.2rem; margin-bottom:2rem;">
+            <button class="profile-tab active" data-tab="reservations">My Reservations</button>
+            <button class="profile-tab" data-tab="favorites">Favorites</button>
+            <button class="profile-tab" data-tab="settings">Account Settings</button>
+        </div>
+        <div id="profile-tab-content">
+            <div class="tab-pane" id="tab-reservations">
+                <div style="background:#fff; border-radius:12px; box-shadow:0 2px 12px rgba(106,27,154,0.09); padding:1.5rem; margin-bottom:2rem;">
+                    <h3 style="color:#6a1b9a; display:flex; align-items:center; gap:0.7rem;">My Reservations <span id="loyalty-points-badge" style="font-size:1rem; color:#fff; background:#a18cd1; border-radius:12px; padding:0.2rem 0.8rem; margin-left:auto;">Points: 0</span></h3>
+                    <ul id="my-reservations" style="list-style:none; padding:0; margin:0;"></ul>
+                </div>
+            </div>
+            <div class="tab-pane" id="tab-favorites" style="display:none;">
+                <div style="background:#fff; border-radius:12px; box-shadow:0 2px 12px rgba(106,27,154,0.09); padding:1.5rem; margin-bottom:2rem;">
+                    <h3 style="color:#6a1b9a;">Favorite Dishes</h3>
+                    <ul id="favorite-dishes" style="list-style:none; padding:0; margin:0;"></ul>
+                    <div id="no-favorites-msg" style="color:#888; text-align:center; margin-top:1.2rem; display:none;">No favorites yet. Add dishes from the menu!</div>
+                </div>
+            </div>
+            <div class="tab-pane" id="tab-settings" style="display:none;">
+                <div style="display:flex; justify-content:center;">
+                    <div style="background:#fff; border-radius:12px; box-shadow:0 2px 12px rgba(106,27,154,0.09); padding:1.5rem; max-width:400px; width:100%;">
+                        <h3 style="color:#6a1b9a; text-align:center;">Account Settings</h3>
+                        <form id="account-settings-form" style="display:flex; flex-direction:column; gap:1.2rem;">
+                            <label>Email: <input type="email" id="settings-email" required></label>
+                            <label>New Password: <input type="password" id="settings-password" placeholder="Leave blank to keep unchanged"></label>
+                            <button type="submit" style="background:#a18cd1; color:#fff; border:none; border-radius:18px; padding:0.7rem 1.7rem; font-weight:600; cursor:pointer;">Update</button>
+                            <div id="settings-message" style="min-height:1.2em; font-size:0.98rem;"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="profile-feedback" style="margin-top:2.5rem; background:#fff; border-radius:12px; box-shadow:0 2px 12px rgba(106,27,154,0.09); padding:1.5rem; max-width:500px; margin-left:auto; margin-right:auto;">
+            <h3 style="color:#6a1b9a;">We Value Your Feedback</h3>
+            <form id="feedback-form" style="display:flex; flex-direction:column;
